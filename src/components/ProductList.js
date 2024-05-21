@@ -9,7 +9,7 @@ const ProductList = () => {
   useEffect(() => {
     const loadProducts = async () => {
       setLoading(true);
-      const response = await fetch(`API_ENDPOINT?page=${page}`);
+      const response = await fetch(`https://furrl.in/api/products?page=${page}`);
       const data = await response.json();
       setProducts(prev => [...prev, ...data.products]);
       setLoading(false);
