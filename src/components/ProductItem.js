@@ -6,8 +6,8 @@ const ProductItem = ({ product }) => {
     <div>
       <h3>{product.name}</h3>
       <p>{product.description}</p>
-      <button onClick={() => window.location.href = `PRODUCT_DETAIL_URL/${product.id}`}>View Product</button>
-      <ShareButton url={`PRODUCT_DETAIL_URL/${product.id}`} />
+      <button onClick={() => window.location.href = `https://furrl.in/product/${product.id}`}>View Product</button>
+      <ShareButton url={`https://furrl.in/product/${product.id}`} />
     </div>
   );
 };
